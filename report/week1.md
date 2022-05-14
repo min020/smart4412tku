@@ -4,84 +4,52 @@
 
 ## 주제선정
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+주제선정에 앞서 사전조사를 진행했다. 임베디드 시스템으로 진행된 프로젝트 대부분이 간단한 게임을 만드는 것이었다.
 
-### Prerequisites
+아래 사진 2개는 임베디드 시스템으로 테트리스 게임, 스네이크 게임을 구현한 사진이다.
 
-What things you need to install the software and how to install them
+![Pic](./pic/tetris_example.png)
+![Pic2](./pic/snake_example.png)
 
-```
-Give examples
-```
+또한 장치들의 특성상 복잡한 게임보다는 간단한 종류의 게임을 만드는 것이 좋다 생각해서 위 2개의 게임과 비슷한 고전게임인 __갤러그 게임__ 을 구현하기로 했다.
 
-### Installing
+<br/>
 
-A step by step series of examples that tell you how to get a development env running
+## 세부 구상
 
-Say what the step will be
+### 우주선
 
-```
-Give the example
-```
+* 사용자가 직접 조작
+* 좌우로만 이동 가능
+* 미사일 발사로 장애물 파괴
 
-And repeat
+### 장애물
 
-```
-until finished
-```
+* 위치 및 두께가 랜덤으로 등장
+* 우주선이 발사한 미사일에 맞으면 파괴
 
-End with an example of getting some data out of the system or using it for a little demo
+### 게임 운영
 
-## Running the tests
+* 우주선이 장애물에 부딪히면 게임 오버
+* 장애물을 부술때마다 점수 증가
+* 스테이지 별 시간이 존재
+* 해당 시간동안 생존시 다음 스테이지로 넘어감
 
-Explain how to run the automated tests for this system
+### 사용 장치
 
-### Break down into end to end tests
+![Pic3](./pic/board.png)
 
-Explain what these tests test and why
+* Dot Matrix - 게임 화면 표시
+* CLCD - 점수&스테이지 표시
+* 7 Segment - 스테이지 남은 시간 표시
+* Tact Switch - 이동&미사일 발사 조작
 
-```
-Give an example
-```
+### Dot Matrix 화면 구상
 
-### And coding style tests
+![Pic4](./pic/dot_matrix.png)
 
-Explain what these tests test and why
+<br/>
 
-```
-Give an example
-```
+## 차별점
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+앞서 사전조사한 테트리스 게임과 스네이크 게임을 포함해서 대부분 게임 프로젝트들은 

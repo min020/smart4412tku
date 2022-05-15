@@ -11,7 +11,13 @@
 ![Pic](./pic/tetris_example.png)
 ![Pic2](./pic/snake_example.png)
 
+<br/>
+
 사전조사한 프로젝트 처럼 장치의 특성상 복잡한 게임보다는 간단한 종류의 게임을 만드는 것이 좋다 생각해서 위 2개의 게임과 비슷한 고전게임인 __갤러그 게임__ 을 구현하기로 했다.
+
+![Pic3](./pic/galaga.gif)
+
+*↑ 구현 목표인 갤러그 게임*
 
 <br/>
 
@@ -26,6 +32,7 @@
 ### 장애물
 
 * 위치 및 두께가 랜덤으로 등장
+* 맨 위에서부터 일직선으로 내려옴(좌우 이동x)
 * 우주선이 발사한 미사일에 맞으면 파괴
 
 ### 게임 운영
@@ -37,7 +44,7 @@
 
 ### 사용 장치
 
-![Pic3](./pic/board.png)
+![Pic4](./pic/board.png)
 
 * Dot Matrix - 게임 화면 표시
 * CLCD - 점수&스테이지 표시
@@ -46,7 +53,7 @@
 
 ### Dot Matrix 화면 구상
 
-![Pic4](./pic/dot_matrix.png)
+![Pic5](./pic/dot_matrix.png)
 
 <br/>
 

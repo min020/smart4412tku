@@ -1,4 +1,4 @@
-# 1차 발표
+# 22.05.17. 1차 발표 - 장지원
 
 ### 프로젝트 계획
 
@@ -74,4 +74,5 @@
 
 ## 참고문헌
 [Snake 게임](https://github.com/jinwoo1225/SnakeGameWithSmart4412)
+
 [테트리스 게임](https://github.com/raekim/embedded_tetris)

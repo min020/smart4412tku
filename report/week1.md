@@ -70,7 +70,6 @@
   * 장애물이 내려오는 속도
   * 장애물 생성 주기
 
-<br/>
 
 ## 참고문헌
 [Snake 게임](https://github.com/jinwoo1225/SnakeGameWithSmart4412)

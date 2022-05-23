@@ -1,7 +1,11 @@
 # 22.05.24 2차 발표
 ### 발표자 : 김민규
 ## 진행상황
-tact switch를 이용한 우주선 이동과 블록의 랜덤 생성까지 구현하였다.
+* Dot Matrix
+  - 우주선 - 좌우이동
+  - 장애물 - 랜덤으로 한블럭씩 생성
+* Tact Switch
+  - 우주선 이동
 
 ![Pic](./pic/block.gif)
 ![Pic](./pic/spaceship.gif)

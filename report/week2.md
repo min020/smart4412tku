@@ -3,7 +3,7 @@
 ## 진행상황
 tact switch를 이용한 우주선 이동과 블록의 랜덤 생성까지 구현하였다.
 
-(움짤넣을예정)
+![Alt text](/smart4412tku/report/pic/block.gif)
 
 dot matrix와 tact switch에 동시접근이 안되는 부분에서 어려움을 겪었지만 gettimeofday 함수를 이용해서 시간제한을 두는 방식으로 해결하였다. 
 

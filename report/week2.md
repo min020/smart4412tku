@@ -33,10 +33,12 @@ gettimeofday(&dotst, NULL);
 }
 ```
 
+
 ## 다음 발표까지 진행목표 
  - 스레드를 이용한 병렬처리 - 블록 움직임을 시간제한 방식으로 동작시키다보니 블록이 하나씩 밖에 생성되지 않는 문제를 해결하기 위함
 
 - 우주선과 블록을 dot matrix에 동시에 구현
+
 
 ## 참고문헌
 [dot matrix 조작 참고문헌](https://comonyo.tistory.com/16)

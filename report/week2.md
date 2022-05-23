@@ -22,7 +22,7 @@ dot matrix와 tact switch에 동시접근이 안되는 부분에서 어려움을
         }
         gettimeofday(&dotend, NULL);
         write(dot_d,&c,sizeof(c));     //우주선 출력
-        //dot matrix와 tack switch를 0.2초마다 번갈아가면서 접근
+        /***dot matrix와 tack switch를 0.2초마다 번갈아가면서 접근***/
         if((dotend.tv_usec - dotst.tv_usec > 200000) || (dotend.tv_sec>dotst.tv_sec && (dotend.tv_usec+1000000-dotst.tv_usec > 200000)))
         {
             dot_d = close(dot_d);
@@ -37,27 +37,11 @@ dot matrix와 tact switch에 동시접근이 안되는 부분에서 어려움을
                 read(tact,&t,sizeof(t));     //tact switch에 0.2초간 접근해있는 동안 입력받음
                 switch(t)
                 {
-                    case 4:
-                        if (c[6] != 0x40)    //4번 버튼 입력시 왼쪽으로 우주선 이동
-                        {
-                            c[6] = c[6]<<1;
-                            c[7] = c[7]<<1;
-                        }
-                        break;
-                    
-                    case 6:
-                        if (c[6] != 0x02)   //6번 버튼 입력시 오른쪽으로 우주선 이동
-                        {
-                            c[6] = c[6]>>1;
-                            c[7] = c[7]>>1;
-                        }
-                        break;
-                        
-                    case 11:    //11번 버튼 입력시 중지
-                        b = false;
-                        break;
+                   
+                   ```
+                   
                 }
-                //0.2초 경과 or tact switch 입력이 있는 경우 tact switch에 접근 해제
+                /***0.2초 경과 or tact switch 입력이 있는 경우 tact switch에 접근 해제***/
                 if((tactend.tv_usec - tactst.tv_usec > 200000) || (tactend.tv_sec>tactst.tv_sec && (tactend.tv_usec+1000000-tactst.tv_usec > 200000)) || t)
                 {
                     tact = close(tact);

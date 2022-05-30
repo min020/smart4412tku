@@ -33,7 +33,7 @@ int setMatrix(char d1[], char d2[], char d3[], int d)   //d1:장애물 d2:우주
     }
     write(d, &matrix, sizeof(matrix));
     return b;   //장애물과 우주선이 충돌하면 false리턴으로 게임 종료
-    }
+}
 ```
 
 ## 변경 사항

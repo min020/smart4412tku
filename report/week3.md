@@ -37,7 +37,7 @@ int setMatrix(char d1[], char d2[], char d3[], int d)   //d1:장애물 d2:우주
 ```
 
 ## 다음 발표까지 진행목표 
--FND
+- FND
   - 현재 스테이지 남은 시간 출력
 - CLCD
   - 점수, 게임 진행 안내 출력

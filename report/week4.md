@@ -90,10 +90,10 @@ case 1:
 ```
 
 ## 참고문헌
-[FND 조작 참고문헌]([https://comonyo.tistory.com/16](https://comonyo.tistory.com/7))
+[FND 조작 참고문헌](https://comonyo.tistory.com/7)
 
 [FND 16진수 참고문헌](https://zmade.tistory.com/18)
 
-[CLCD 조작 참고문헌]([https://hongci.tistory.com/85](https://cccding.tistory.com/67))
+[CLCD 조작 참고문헌](https://cccding.tistory.com/67)
 
 [sprintf 함수 참고문헌](https://jhnyang.tistory.com/314)
